@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin - The Timer</title>
+  <%-include('components/Header.ejs')%>
+</head>
+<body>
+  <main>
+    <h1>Admin</h1>
+    <div class="divider"></div>
+    <div class="inline">
+      <p><span id="minutes">00</span> minutes</p>
+      <p><span id="seconds">00</span> seconds</p>
+    </div>
+    <div class="divider"></div>
+    <div class="inline">
+      <label for="add-sec">
+        Add
+        <input type="number" id="add-sec" value="10" min="1" max="120">
+        Seconds
+      </label>
+      <label for="remove-sec">
+        Remove
+        <input type="number" id="remove-sec" value="10" min="1" max="120">
+        Seconds
+      </label>
+    </div>
+    <div class="divider"></div>
+    <div class="inline">
+      <a class="button" id="reset">Reset</a>
+      <a class="button" id="start">Start</a>
+      <a class="button" id="pause">Pause</a>
+      <a class="button" id="add">Add seconds</a>
+      <a class="button" id="remove">Remove seconds</a>
+    </div>
+  </main>
+  <script type="module" src="/public/scripts/admin.js"></script>
+</body>
+</html>
